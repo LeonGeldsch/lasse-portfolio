@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Hello</title>
+        <style>
+            h1 {
+                font-size: 50px;
+                color: white;
+                text-align: center;
+                background-color: grey;
+                margin: 100px;
+                padding: 30px;
+                /*
+                border-color: aqua;
+                border-width: 5px;
+                border-style: dashed;
+                */
+                border: dashed aqua 5px;
+                outline: 5px dashed blue;
+                /*animation: rotate 10000s linear infinite; */
+                background: linear-gradient(90deg, 
+                    rgba(0,212,255,1) 0%, 
+                    rgba(9,9,121,1) 70%, 
+                    rgba(0,0,255,1) 100%);             
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                    background-color: rgb(56, 197, 138);
+                }
+                to {
+                    transform: rotate(360deg);
+                    background-color: rgb(223, 27, 197);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        Hello Jiabei!
+        <h1>Jiabei</h1>
+        <p>
+            dwadawdwadwa wdawd
+        </p>
+        <input type="color" placeholder="type in some text">
+        <img src="/img/mixer.svg" alt="Audio mixer">
+    </body>
+</html>
