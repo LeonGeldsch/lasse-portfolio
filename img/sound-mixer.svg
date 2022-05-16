@@ -1,0 +1,19 @@
+<svg width="274" height="210" viewBox="0 0 274 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5" y="5" width="264" height="200" rx="5" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+<rect y="27" width="10" height="156" rx="5" fill="black"/>
+<rect x="33" y="27" width="10" height="156" rx="5" fill="black"/>
+<rect x="66" y="27" width="10" height="156" rx="5" fill="black"/>
+<rect x="99" y="27" width="10" height="156" rx="5" fill="black"/>
+<rect x="132" y="27" width="10" height="156" rx="5" fill="black"/>
+<rect x="165" y="27" width="10" height="156" rx="5" fill="black"/>
+<rect x="198" y="27" width="10" height="156" rx="5" fill="black"/>
+<rect x="231" y="27" width="10" height="156" rx="5" fill="black"/>
+<rect x="264" y="27" width="10" height="156" rx="5" fill="black"/>
+<rect id="control-1" x="25" y="140" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+<rect id="control-2" x="91" y="140" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+<rect x="58" y="105" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+<rect x="124" y="158" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+<rect x="190" y="87" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+<rect x="223" y="140" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+<rect x="157" y="128" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+</svg>

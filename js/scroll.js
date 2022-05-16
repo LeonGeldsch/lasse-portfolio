@@ -24,7 +24,6 @@ window.addEventListener('scroll', (event) => {
         updateReady = true;
     }, 10)
     if ( updateReady ) update ( getScrollPercent() / 140 + 0.4 );
-    console.log(updateReady);
     updateReady = false;
 });
 update( getScrollPercent() / 140 + 0.4 );

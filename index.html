@@ -7,6 +7,9 @@
     <title>Lasse Geldschläger | Audio artist</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/scroll.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js" defer></script>
+    <script src="./js/mixer.js" defer></script>
 </head>
 <body>
     <header class="navbar">
@@ -26,7 +29,28 @@
             <div class="lp-heading">
                 <div class="lp-title">
                     <h1>Creating awesome sound<br>and music experiences</h1>
-                    <img src="./img/mixer.svg" alt="Mixing table">
+                    <div class="sound-mixer">
+                        <svg width="274" height="210" viewBox="0 0 274 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="5" width="264" height="200" rx="5" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect y="27" width="10" height="156" rx="5" fill="black"/>
+                            <rect class="mixer-control-bound" x="33" y="27" width="10" height="156" rx="5" fill="black"/>
+                            <rect class="mixer-control-bound" x="66" y="27" width="10" height="156" rx="5" fill="black"/>
+                            <rect class="mixer-control-bound" x="99" y="27" width="10" height="156" rx="5" fill="black"/>
+                            <rect class="mixer-control-bound" x="132" y="27" width="10" height="156" rx="5" fill="black"/>
+                            <rect class="mixer-control-bound" x="165" y="27" width="10" height="156" rx="5" fill="black"/>
+                            <rect class="mixer-control-bound" x="198" y="27" width="10" height="156" rx="5" fill="black"/>
+                            <rect class="mixer-control-bound" x="231" y="27" width="10" height="156" rx="5" fill="black"/>
+                            <rect x="264" y="27" width="10" height="156" rx="5" fill="black"/>
+                            <rect class="mixer-control" x="25" y="140" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" x="58" y="105" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" x="91" y="140" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" x="124" y="158" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" x="157" y="128" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" x="190" y="87" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" x="223" y="140" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                        </svg>
+                    </div>
+                    <!--<img src="./img/mixer.svg" alt="Mixing table">-->
                     <img class="blob-shape" src="./img/blob.svg" alt="Blob shape">
                 </div>
                 <button class="main-button"><a href="#work">See my work</a></button>                    
