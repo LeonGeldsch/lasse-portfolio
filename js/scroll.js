@@ -23,8 +23,8 @@ window.addEventListener('scroll', (event) => {
     setTimeout(() => {
         updateReady = true;
     }, 10)
-    if ( updateReady ) update ( getScrollPercent() / 180 + 0.5 );
+    if ( updateReady ) update ( getScrollPercent() / 140 + 0.4 );
     console.log(updateReady);
     updateReady = false;
 });
-update( getScrollPercent() / 180 + 0.5 );
+update( getScrollPercent() / 140 + 0.4 );
