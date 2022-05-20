@@ -1,3 +1,25 @@
+/*
+const backgroundLine = document.querySelector("#background-line");
+const offset = 3000;
+
+gsap.set("#background-line", {
+    strokeDasharray: "8000px",
+});
+
+gsap.fromTo("#background-line", {
+    strokeDasharray: `${offset}px ${backgroundLine.getTotalLength() + offset}px`
+}, {
+    strokeDasharray: `${backgroundLine.getTotalLength()}px 0px`,
+    scrollTrigger: {
+        trigger: ".page-container",
+        scrub: true,
+        start: "top top",
+        end: "bottom-=500px bottom"
+    },
+    ease: "none"
+});
+*/
+
 function getScrollPercent() {
     var h = document.documentElement, 
         b = document.body,

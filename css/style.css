@@ -9,7 +9,7 @@
     --grey: #C4C4C4;
     --yellow: #F3C82D;
     --turquoise: #1ADEAF;
-    --underline-animation-duration: .7s;
+    --underline-animation-duration: 1s;
 }
 
 * {
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, a, button {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 7rem;
 }
 
 h2 {
@@ -80,7 +80,7 @@ input::placeholder, textarea::placeholder {
     color: var(--white);
 }
 
-main, section {
+section {
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -133,14 +133,14 @@ img {
 
 .landing-page {
     height: clamp(0px, 100vh, 1000px);
-    padding-top: 220px;
+    padding-top: 185px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .page-container {
-    padding: 0 40px;
+    padding: 0 100px;
 }
 
 .navbar {
@@ -149,8 +149,7 @@ img {
     z-index: 1;
 }
 .navbar-container {
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: 0 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -190,9 +189,12 @@ img {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
+.sound-mixer {
+    margin: 0 auto;
+}
 .sound-mixer svg {
     height: 100%;
 }
@@ -204,14 +206,14 @@ img {
 }
 
 .lp-text {
-    flex-basis: 40%;
+    flex-basis: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 .arrow-down {
-    background-image: url(/img/arrow-down.svg);
+    background-image: url(../img/arrow-down.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -334,7 +336,7 @@ button a {
     z-index: -1;
     width: auto;
     top: -130px;
-    left: 50%;
+    left: 35%;
     transform: translateX(-47%);
     height: 100%;
 }
@@ -345,6 +347,7 @@ button a {
 .card-wrapper {
     display: flex;
     gap: 40px;
+    margin-right: 4px;
 }
 
 .contact-form {
