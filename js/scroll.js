@@ -19,6 +19,9 @@ gsap.fromTo("#background-line", {
     ease: "none"
 });
 */
+var speed = 135;
+var offset = 0.479;
+
 
 function getScrollPercent() {
     var h = document.documentElement, 
@@ -45,7 +48,10 @@ window.addEventListener('scroll', (event) => {
     setTimeout(() => {
         updateReady = true;
     }, 10)
-    if ( updateReady ) update ( getScrollPercent() / 140 + 0.4 );
+    if ( updateReady ) update ( getScrollPercent() / speed + offset );
     updateReady = false;
 });
-update( getScrollPercent() / 140 + 0.4 );
+update( getScrollPercent() / speed + offset );
+
+
+// TODO: split the line into two svg's and only make the top one scale with page width
