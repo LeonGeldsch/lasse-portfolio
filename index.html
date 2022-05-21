@@ -20,6 +20,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -42,13 +43,13 @@
                             <rect class="mixer-control-bound" x="198" y="27" width="10" height="156" rx="5" fill="black"/>
                             <rect class="mixer-control-bound" x="231" y="27" width="10" height="156" rx="5" fill="black"/>
                             <rect x="264" y="27" width="10" height="156" rx="5" fill="black"/>
-                            <rect class="mixer-control" x="25" y="140" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
-                            <rect class="mixer-control" x="58" y="105" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
-                            <rect class="mixer-control" x="91" y="140" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
-                            <rect class="mixer-control" x="124" y="158" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
-                            <rect class="mixer-control" x="157" y="128" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
-                            <rect class="mixer-control" x="190" y="87" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
-                            <rect class="mixer-control" x="223" y="140" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" data-index="0" x="25" y="165" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" data-index="1" x="58" y="165" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" data-index="2" x="91" y="165" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" data-index="3" x="124" y="165" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" data-index="4" x="157" y="165" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" data-index="5" x="190" y="165" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
+                            <rect class="mixer-control" data-index="6" x="223" y="165" width="25" height="18" rx="9" fill="#FFDCA8" stroke="black" stroke-width="10"/>
                         </svg>
                     </div>
                     <!--<img src="./img/mixer.svg" alt="Mixing table">-->
@@ -95,23 +96,30 @@
                         </defs>
                     </svg>
                 </div>
-            </div>
-            <div class="lp-info">
                 <div class="lp-text">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab beatae officiis ex esse perferendis reiciendis, sed assumenda quasi sequi.
-                    </p>
-                    <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, accusantium?
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae illum doloribus, iste explicabo cupiditate maiores laboriosam rerum rem aspernatur repellat necessitatibus distinctio corrupti officia numquam. Minus deleniti facilis magnam facere.
+                        Molestiae illum doloribus, iste explicabo cupiditate maiores laboriosam rerum rem aspernatur repellat necessitatibus distinctio corrupti officia numquam. Minus deleniti facilis magnam facere.
                     </p>
                 </div>
-                <span class="arrow-down"></span>
+            </div>
+            <div class="lp-info">
                 <div class="card yellow lp-card">
                     <h3 class="card-title">Latest song project</h3>
+                    <div class="card-body">
+                        <h4>Rap song</h4>
+                        <audio controls>
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>                          
+                    </div>
                 </div>
                 <div class="card turquoise lp-card">
                     <h3 class="card-title">Latest film project</h3>
+                    <div class="card-body">
+                        <h4>Sound effects</h4>
+                        <iframe src="https://www.youtube-nocookie.com/embed/IGlCyjFzkCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                    </div>
                 </div>
             </div>
         </main>
@@ -122,10 +130,10 @@
                     <h3 class="card-title">Song project 1</h3>
                 </div>
                 <div class="card yellow">
-                    <h3 class="card-title">Song project 1</h3>
+                    <h3 class="card-title">Song project 2</h3>
                 </div>
                 <div class="card yellow">
-                    <h3 class="card-title">Song project 1</h3>
+                    <h3 class="card-title">Song project 3</h3>
                 </div>
             </div>
         </section>
@@ -136,18 +144,39 @@
                     <h3 class="card-title">Song project 1</h3>
                 </div>
                 <div class="card turquoise">
-                    <h3 class="card-title">Song project 1</h3>
+                    <h3 class="card-title">Song project 2</h3>
                 </div>
                 <div class="card turquoise">
-                    <h3 class="card-title">Song project 1</h3>
+                    <h3 class="card-title">Song project 3</h3>
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="mw-1200" id="about">
             <div class="profile">
-                <h2>"Feel free to<br>contact me!"</h2>
-                <img src="./img/lasse.svg" alt="A picture of Lasse">
+                <h2>"Hello, my name is Lasse!"</h2>
+                <div class="mw-800">
+                    <div class="profile-picture">
+                        <img src="./img/lasse.png" alt="A picture of Lasse">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quidem harum odio tenetur cumque aliquam et voluptatibus in incidunt, voluptates recusandae. 
+                        Eveniet voluptas facilis dolor laudantium at consequuntur architecto ducimus dolorum, quis impedit maxime aliquam unde saepe eum inventore tempore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequatur velit quos tempore doloremque repellat molestias ullam recusandae aliquid numquam iste, 
+                    </p>
+                    <p>
+                        voluptatibus, dolorum at temporibus enim, quisquam illo placeat eum inventore. Ratione minima dolore dignissimos,
+                        molestiae quia voluptates voluptatem aliquam laborum. Voluptatum delectus, atque perferendis fuga quas autem ipsa excepturi, ad veritatis maiores maxime, 
+                    </p>
+                    <p>
+                        voluptas provident dolores rem repellat explicabo non pariatur debitis unde adipisci quia quidem dolorum. 
+                        Placeat repellat, architecto sunt mollitia esse neque cum commodi itaque culpa ipsam temporibus perspiciatis accusamus, 
+                        obcaecati laboriosam nihil unde nesciunt magnam eum sint a ex quae ipsum? Quidem officiis suscipit pariatur odit?
+                    </p>
+                </div>
             </div>
+        </section>
+        <section class="contact mw-1200" id="contact">
+            <h2>"Feel free to contact me!"</h2>
             <form class="contact-form">
                 <label for="name">Name</label>
                 <input type="text" name="name" placeholder="Your name">
@@ -171,16 +200,9 @@
         </p>
     </footer>
     <div class="background-line">
-        <svg width="1923" height="3074" viewBox="0 0 1923 3074" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_22_2)">
-                <path id="background-line" d="M0 590.703C99.6 331.103 444.5 264.869 604.5 264.203C945.7 264.203 1054 133.536 1065.5 68.2025C1131 -170.797 1851.5 292.703 1894.5 323.203C2039.7 414.803 1594.33 641.703 1353.5 743.703C1225.5 797.914 1299 987.5 1256.5 1136C1170.65 1435.97 575.542 1079 399 1275C84.1961 1624.5 982.572 1927.12 1090.5 1985C1283.5 2088.5 1247.5 2218 1172.5 2300.5C1075.1 2407.64 451.018 2463 476.5 2733.5C491.855 2896.5 670.667 3052.83 732 3074" stroke="black" stroke-width="3"/>
-            </g>
-            <defs>
-                <clipPath id="clip0_22_2">
-                    <rect width="1923" height="3074" fill="white"/>
-                </clipPath>
-            </defs>
-        </svg>    
+        <svg viewBox="0 0 1920 3709" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="background-line" d="M-214 422.5C-132 146 497.5 126.5 711 126.5C1039.5 126.5 1052.23 -201.942 1180.5 -173C1360 -132.5 2140.5 213 2134.5 350C2128.5 487 1587 462.797 1413.5 575C1240 687.203 1209 916 1166.5 1064.5C1099.1 1300 763.042 1026.5 586.5 1222.5C271.696 1572 947 1558 1166.5 1680.5C1386 1803 1611 1988.5 1431 2100C1251 2211.5 273.064 2273.35 320 2590C344.375 2754.45 588.167 3035.83 649.5 3057" stroke="black" stroke-width="3"/>
+        </svg>
     </div>
 </body>
 </html>
