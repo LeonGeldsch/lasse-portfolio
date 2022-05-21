@@ -56,6 +56,10 @@ h2 {
     text-shadow: 4px 4px var(--black);
 }
 
+h4 {
+    font-size: 1.2rem;
+}
+
 p {
     font-family: 'Inter', sans-serif;
     margin-top: 0;
@@ -81,21 +85,21 @@ input::placeholder, textarea::placeholder {
 }
 
 section {
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-section {
     margin-top: clamp(0px, calc(100vh - 100px), 200px);
     padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 40px;
 }
-section.contact {
+.contact {
     flex-direction: row;
+    align-items: flex-start;
     gap: 150px;
+}
+.contact h2 {
+    flex: 1;
 }
 
 footer {
@@ -131,9 +135,19 @@ img {
     display: flex;
 }
 
+.mw-1200 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mw-800 {
+    max-width: 800px;
+}
+
 .landing-page {
-    height: clamp(0px, 100vh, 1000px);
-    padding-top: 185px;
+    /*height: clamp(0px, 100vh, 1000px);*/
+    min-height: 100vh;
+    padding-top: 12%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -188,52 +202,52 @@ img {
     position: relative;
     display: flex;
     width: 100%;
-    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .sound-mixer {
-    margin: 0 auto;
+    margin-left: 100px;
 }
 .sound-mixer svg {
     height: 100%;
 }
+.mixer-control {
+    xtransform: translateY(calc(-138px / 100 * 0));
+}
 
 .lp-info {
     display: flex;
-    width: 100%;
     flex-grow: 1;
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+    gap: 40px;
 }
 
 .lp-text {
-    flex-basis: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 600px;
 }
-
-.arrow-down {
-    background-image: url(../img/arrow-down.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 5%;
-}
-
 
 .card {
     background-color: var(--white);
-    flex-grow: 1;
     border: 5px solid var(--black);
     border-radius: 5px;
     box-shadow: 4px 4px 0 var(--black);
     min-height: 400px;
+    height: 40vh;
+    aspect-ratio: 0.8;
     animation: fade-in-from-bottom .3s ease-in-out;
 }
 .card-title {
-    padding: 0.5em 0.8em;
+    padding: 10px 20px;
     font-size: 1.7rem;
     border-bottom: 5px solid var(--black);
+}
+.card-body {
+    padding: 20px;
 }
 .card.yellow .card-title {
     background-color: var(--yellow);
@@ -241,10 +255,15 @@ img {
 .card.turquoise .card-title {
     background-color: var(--turquoise);
 }
+.card iframe {
+    width: 100%;
+    aspect-ratio: 1.8;
+}
+.card audio {
+    width: 100%;
+}
 
 .lp-card {
-    margin-left: 40px;
-    margin-bottom: 40px;
     min-height: 290px;
 }
 
@@ -276,9 +295,8 @@ button a {
     color: var(--white);
 }
 .button-underline {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(115%);
+    position: relative;
+    bottom: -10px;
 }
 
 #underline-stroke-1 {
@@ -325,8 +343,8 @@ button a {
 
 .blob-shape {
     position: absolute;
-    top: -40%;
-    right: -10%;
+    top: -13vh;
+    right: -6vw;
     z-index: -1;
 }
 
@@ -334,14 +352,10 @@ button a {
     position: absolute;
     pointer-events: none;
     z-index: -1;
-    width: auto;
-    top: -130px;
-    left: 35%;
-    transform: translateX(-47%);
-    height: 100%;
+    width: 2000px;
 }
-#background-line {
-    transition: stroke-dasharray .1s ease-out;
+.background-line svg {
+    overflow-x: visible;
 }
 
 .card-wrapper {
@@ -353,7 +367,7 @@ button a {
 .contact-form {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1;
     align-items: flex-start;
 }
 .contact-form label {
@@ -367,6 +381,15 @@ button a {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+}
+.profile p {
+    transform: translateX(20px);
+    margin-right: 20px;
+}
+
+.profile-picture {
+    shape-outside: url(./../img/lasse.png);
+    float: left;
 }
 
 @keyframes draw-from-left {
