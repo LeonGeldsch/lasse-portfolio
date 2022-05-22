@@ -24,9 +24,7 @@ for (let i = 0; i < allMixerControls.length; i++) {
         type: "y"
     })];
     allDraggableControls[i][0].addEventListener("drag", onDrag);
+    allDraggableControls[i][0].addEventListener("dragstart", () => {
+        allAudios[i].play();
+    });
 }
-
-allAudios.forEach(audio => {
-    audio.play();
-    audio.volume = 0;
-});
